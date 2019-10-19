@@ -1,0 +1,25 @@
+.button {
+
+    &--cookies {
+
+        & button {
+            border-radius: 15px;
+            padding: 5px 20px;
+            background-color: white;
+
+            &:hover {
+                padding: 15px 25px 14px 25px;
+                background-color: #ff400b;
+            }
+        }
+    }
+
+    &__btn {
+        border: none;
+        color: #194277;
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 16px;
+        font-family: 'Lato', swap;
+    }
+}

@@ -1,5 +1,11 @@
 .page {
-    color: black;
+    text-align: center;
+
+    &--main {
+        background-color: #367dfe;
+        color: white;
+    }
+
     // styles
 
     // state
