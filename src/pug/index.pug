@@ -1,6 +1,7 @@
 //- include ../blocks/nav/_nav.pug
 include ../blocks/headline/_headline.pug
 include ../blocks/card/_card.pug
+include ../blocks/cookies/_cookies.pug
 
 <!DOCTYPE html>
 html(lang="en")
@@ -13,6 +14,9 @@ html(lang="en")
         link(rel="stylesheet", href="../node_modules/remodal/dist/remodal-default-theme.css")
         link(rel="stylesheet", href="./style/style.css")
     body
+        .page.page--main
+            .conteiner
+                +cookies
         .page.page--about
             .container
                 .row
@@ -21,15 +25,5 @@ html(lang="en")
         
         .page.page--expert
 
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
         script(src="https://code.jquery.com/jquery-3.4.1.min.js")
         script(src="../node_modules/remodal/dist/remodal.js")
