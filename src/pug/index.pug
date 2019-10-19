@@ -12,9 +12,14 @@ html(lang="en")
         link(rel="stylesheet", href="../node_modules/remodal/dist/remodal-default-theme.css")
         link(rel="stylesheet", href="./style/style.css")
     body
+        +cookies
         .page.page--main
             .conteiner
-                +cookies
+                .row
+                    .col-12.d-flex.flex-column.justify-content-center
+                    +main-content
+                    
+
 
 
         script(src="https://code.jquery.com/jquery-3.4.1.min.js")
