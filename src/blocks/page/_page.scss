@@ -1,5 +1,22 @@
 .page {
-    color: black;
+
+    text-align: center;
+
+    &--about {
+        background-color: white;
+        color: #3677fd;
+        padding-top: 100px;
+    
+
+    }
+
+    &--expert {
+        background-color: #f1f8ff;
+        color: #3677fd;
+        
+
+    }
+
     // styles
 
     // state
