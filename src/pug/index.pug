@@ -3,6 +3,10 @@ include ../blocks/picture/_picture.pug
 include ../blocks/clients/_clients.pug
 include ../blocks/designer/_designer.pug
 
+//- include ../blocks/nav/_nav.pug
+include ../blocks/headline/_headline.pug
+include ../blocks/card/_card.pug
+include ../blocks/cookies/_cookies.pug
 
 <!DOCTYPE html>
 html(lang="en")
@@ -13,8 +17,19 @@ html(lang="en")
         title Document
         link(rel="stylesheet", href="../node_modules/remodal/dist/remodal.css")
         link(rel="stylesheet", href="../node_modules/remodal/dist/remodal-default-theme.css")
-        link(rel="stylesheet", href="./css/style.css")
+        link(rel="stylesheet", href="./style/style.css")
     body
+        .page.page--main
+            .conteiner
+                +cookies
+        .page.page--about
+            .container
+                .row
+                    .col-12
+                        +headline("About Me","Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velitesse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia ")
+        
+        .page.page--expert
+            +card
         +latest
         +clients
         +designer

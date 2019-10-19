@@ -1,0 +1,9 @@
+include ../button/_button.pug
+
+mixin cookies
+    .cookies
+        .container
+            .row
+                .col-12.d-flex.align-items-center.justify-content-center
+                    p.cookies__title This site uses cookies, so that my service can work better.
+                    +button("Accept").button--cookies
