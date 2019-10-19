@@ -1,3 +1,8 @@
+include ../blocks/latest/_latest.pug
+include ../blocks/picture/_picture.pug
+include ../blocks/clients/_clients.pug
+include ../blocks/designer/_designer.pug
+
 //- include ../blocks/nav/_nav.pug
 include ../blocks/headline/_headline.pug
 include ../blocks/card/_card.pug
@@ -31,5 +36,10 @@ html(lang="en")
                         +headline("About Me","Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velitesse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia ")
         
 
+        .page.page--expert
+            +card
+        +latest
+        +clients
+        +designer
         script(src="https://code.jquery.com/jquery-3.4.1.min.js")
         script(src="../node_modules/remodal/dist/remodal.js")
