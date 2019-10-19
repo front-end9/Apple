@@ -1,9 +1,28 @@
 .page {
+
     text-align: center;
+
+    &--about {
+        background-color: white;
+        color: #3677fd;
+        padding-top: 100px;
+
+
+    }
+
+    &--expert {
+        background-color: #f1f8ff;
+        color: #3677fd;
+    }
 
     &--main {
         background-color: #367dfe;
         color: white;
+        padding: 0 350px;
+
+        & img {
+            margin: 15px 0;
+        }
     }
 
     // styles

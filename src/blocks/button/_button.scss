@@ -13,5 +13,10 @@
         font-weight: 800;
         line-height: 16px;
         font-family: 'Lato', swap;
+
+        &--main-content {
+            text-transform: uppercase;
+            padding: 10px 30px;
+        }
     }
 }

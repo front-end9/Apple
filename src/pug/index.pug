@@ -1,5 +1,10 @@
 //- include ../blocks/nav/_nav.pug
+include ../blocks/headline/_headline.pug
+include ../blocks/card/_card.pug
 include ../blocks/cookies/_cookies.pug
+include ../blocks/button/_button.pug
+include ../blocks/logo/_logo.pug
+include ../blocks/main-content/_main-content.pug
 
 <!DOCTYPE html>
 html(lang="en")
@@ -14,13 +19,17 @@ html(lang="en")
     body
         +cookies
         .page.page--main
-            .conteiner
+            .container
                 .row
-                    .col-12.d-flex.flex-column.justify-content-center
-                    +main-content
-                    
-
-
+                    .col-12.d-flex.flex-column.align-items-center
+                        +main-content
+                        img(src="img/arrow__bottom.png", alt="")
+        .page.page--about
+            .container
+                .row
+                    .col-12
+                        +headline("About Me","Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velitesse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia ")
+        
 
         script(src="https://code.jquery.com/jquery-3.4.1.min.js")
         script(src="../node_modules/remodal/dist/remodal.js")
